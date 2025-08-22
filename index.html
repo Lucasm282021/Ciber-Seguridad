@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concientización en Ciberseguridad</title>
+    <meta name="description" content="Aprende sobre ciberseguridad, consejos prácticos y recursos útiles para proteger tu información personal y profesional.">
+    <meta name="keywords" content="ciberseguridad, seguridad informática, protección de datos, consejos, recursos, internet seguro">
+    <meta name="author" content="Concientización en Ciberseguridad">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="theme-color" content="#1a237e">
+    <!-- Accesibilidad -->
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Concientización en Ciberseguridad</h1>
+        <nav class="header__nav" id="mainnav">
+            <ul class="header__nav-list">
+                <li><a class="header__nav-link" href="#intro">Home</a></li>
+                <li><a class="header__nav-link" href="#consejos">Consejos</a></li>
+                <li><a class="header__nav-link" href="#recursos">Recursos</a></li>
+                <li><a class="header__nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section section--intro" id="intro">
+            <h2 class="section__title">¿Por qué es importante la ciberseguridad?</h2>
+            <p class="section__description">
+                La ciberseguridad protege tu información personal y profesional de amenazas digitales. ¡Infórmate y mantente seguro!
+            </p>
+        </section>
+
+        <section class="section section--consejos" id="consejos">
+            <h2 class="section__title">Consejos Básicos</h2>
+            <ul class="section__list">
+                <li class="section__item">Usa contraseñas fuertes y únicas.</li>
+                <li class="section__item">No compartas información personal en redes sociales.</li>
+                <li class="section__item">Actualiza tus dispositivos y aplicaciones regularmente.</li>
+                <li class="section__item">Desconfía de correos electrónicos sospechosos.</li>
+                <li class="section__item">Utiliza autenticación en dos pasos.</li>
+            </ul>
+        </section>
+
+        <section class="section section--recursos" id="recursos">
+            <h2 class="section__title">Recursos Útiles</h2>
+            <ul class="section__list">
+                <li class="section__item"><a class="section__link" href="https://www.incibe.es/" target="_blank">INCIBE</a></li>
+                <li class="section__item"><a class="section__link" href="https://www.osi.es/" target="_blank">Oficina de Seguridad del Internauta</a></li>
+                <li class="section__item"><a class="section__link" href="https://www.ciberseguridad.gob.ar/" target="_blank">Ciberseguridad Argentina</a></li>
+            </ul>
+        </section>
+
+        <section class="section section--contacto" id="contacto">
+            <h2 class="section__title">Contacto</h2>
+            <form class="form">
+                <label class="form__label" for="nombre">Nombre:</label>
+                <input class="form__input" type="text" id="nombre" name="nombre" required>
+                
+                <label class="form__label" for="email">Correo electrónico:</label>
+                <input class="form__input" type="email" id="email" name="email" required>
+                
+                <label class="form__label" for="mensaje">Mensaje:</label>
+                <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
+                
+                <button class="form__button" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <p class="footer__text">&copy; 2025 Concientización en Ciberseguridad. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

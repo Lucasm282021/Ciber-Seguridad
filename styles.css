@@ -1,0 +1,249 @@
+/* Paleta de colores principal */
+:root {
+    --color-primario: #0f172a;      /* Azul muy oscuro */
+    --color-secundario: #1e293b;    /* Gris azulado oscuro */
+    --color-acento: #f59e42;        /* Naranja vibrante */
+    --color-fondo-claro: #1e293b;   /* Fondo principal oscuro */
+    --color-fondo-oscuro: #0f172a;  /* Fondo aún más oscuro */
+    --color-texto-claro: #f3f4f6;   /* Texto claro */
+    --color-texto-oscuro: #0f172a;  /* Texto oscuro */
+    --color-footer: #0f172a;
+    --color-shadow: rgba(15,23,42,0.25);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Compensar el header fijo al navegar por anclas */
+:target {
+    scroll-margin-top: 9rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: var(--color-fondo-oscuro);
+    color: var(--color-texto-claro);
+    min-height: 100vh;
+}
+
+.header {
+    width: 100vw;
+    background: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 1.2rem 0 0.8rem 0;
+    text-align: center;
+    border-bottom: 2px solid var(--color-acento);
+    box-shadow: 0 2px 12px var(--color-shadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header__title {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--color-acento);
+    text-shadow: 0 2px 8px var(--color-shadow);
+    display: block;
+    text-align: center;
+}
+.header__nav {
+    margin-top: 0.5rem;
+}
+.header__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.header__nav-link {
+    color: var(--color-texto-claro);
+    background: var(--color-secundario);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+    padding: 0.3rem 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px var(--color-shadow);
+}
+.header__nav-link:hover,
+.header__nav-link:focus {
+    color: var(--color-acento);
+    background: var(--color-fondo-claro);
+    outline: 2px solid var(--color-acento);
+    box-shadow: 0 0 12px var(--color-acento);
+}
+
+.main {
+    max-width: 900px;
+    margin: 7rem auto 2rem auto;
+    padding: 2.5rem 2rem;
+    background: var(--color-fondo-claro);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px var(--color-shadow);
+}
+
+.section {
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+.section__title {
+    color: var(--color-acento);
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px var(--color-shadow);
+    background: var(--color-primario);
+    padding: 0.7rem 1.2rem;
+    border-radius: 10px;
+    text-align: left;
+}
+.section__description {
+    font-size: 1.18rem;
+    color: var(--color-texto-claro);
+    background: rgba(245,158,66,0.09);
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+.section__list {
+    padding-left: 1.5rem;
+}
+.section__item {
+    margin-bottom: 0.7rem;
+    font-size: 1.12rem;
+    color: var(--color-texto-claro);
+    background: var(--color-secundario);
+    border-radius: 7px;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px var(--color-shadow);
+}
+.section__item:hover {
+    background: var(--color-acento);
+    color: var(--color-footer);
+    box-shadow: 0 0 12px var(--color-acento);
+}
+.section__link {
+    color: var(--color-acento);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.section__link:hover,
+.section__link:focus {
+    color: var(--color-secundario);
+    outline: none;
+}
+
+.form {
+    margin-top: 1.5rem;
+    background: var(--color-fondo-claro);
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px var(--color-shadow);
+    width: 100%;
+    max-width: 500px;
+}
+.form__label {
+    display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-acento);
+    font-weight: 600;
+    font-size: 1.08rem;
+}
+.form__input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1.5px solid var(--color-secundario);
+    border-radius: 7px;
+    margin-bottom: 1.2rem;
+    font-size: 1.08rem;
+    background: #fff;
+    color: var(--color-texto-oscuro);
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+.form__textarea {
+    width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+    padding: 0.8rem;
+    border: 1.5px solid var(--color-secundario);
+    border-radius: 7px;
+    margin-bottom: 1.2rem;
+    font-size: 1.08rem;
+    background: #fff;
+    color: var(--color-texto-oscuro);
+    transition: border 0.2s;
+    resize: vertical;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.form__input:focus,
+.form__textarea:focus {
+    border: 2px solid var(--color-acento);
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+}
+.form__button {
+    background: var(--color-acento);
+    color: var(--color-footer);
+    border: none;
+    padding: 0.8rem 1.7rem;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 12px var(--color-acento);
+}
+.form__button:hover,
+.form__button:focus {
+    background: var(--color-primario);
+    color: var(--color-acento);
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+    box-shadow: 0 0 18px var(--color-acento);
+}
+.form__input[aria-invalid=\"true\"],
+.form__textarea[aria-invalid=\"true\"] {
+    border: 2px solid #e11d48;
+    background: #fff0f3;
+}
+.form__error {
+    color: #e11d48;
+    font-size: 0.98rem;
+    margin-top: -0.7rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: block;
+}
+
+.footer {
+    background: var(--color-footer);
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-top: 2px solid var(--color-acento);
+    box-shadow: 0 -2px 12px var(--color-acento);
+}
+.footer__text {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
