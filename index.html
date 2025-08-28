@@ -13,69 +13,142 @@
     <!-- Accesibilidad -->
     <meta name="HandheldFriendly" content="true">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="img/Icono-ciberseguridad.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title">Concientización en Ciberseguridad</h1>
-        <nav class="header__nav" id="mainnav">
-            <ul class="header__nav-list">
-                <li><a class="header__nav-link" href="#intro">Home</a></li>
-                <li><a class="header__nav-link" href="#consejos">Consejos</a></li>
-                <li><a class="header__nav-link" href="#recursos">Recursos</a></li>
-                <li><a class="header__nav-link" href="#contacto">Contacto</a></li>
+    <header class="header" role="banner">
+        <nav class="tech-menu" aria-label="Menú tecnológico">
+            <ul class="tech-menu__list">
+                <li><a href="#intro" class="tech-menu__link">Inicio</a></li>
+                <li><a href="#consejos" class="tech-menu__link">Consejos</a></li>
+                <li><a href="#recursos" class="tech-menu__link">Recursos</a></li>
+                <li><a href="#contacto" class="tech-menu__link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main">
-        <section class="section section--intro" id="intro">
+    <main class="main" role="main">
+        <!-- Introducción -->
+        <section class="section section--intro" id="intro" aria-labelledby="title">
+            <div class="section__branding">
+                <picture class="section__logo">
+                <img src="img/Logo-del-click-a-la-conciencia-mod.png" alt="Logo Del click a la conciencia" class="header__logo">
+                </picture>
+                <h1 class="section__title" id="title">Del click a la conciencia</h1>
+            </div>
+            <h2 class="section__subtitle">Desafíos actuales en la construcción de entornos digitales seguros</h2>
             <h2 class="section__title">¿Por qué es importante la ciberseguridad?</h2>
             <p class="section__description">
                 La ciberseguridad protege tu información personal y profesional de amenazas digitales. ¡Infórmate y mantente seguro!
             </p>
         </section>
 
-        <section class="section section--consejos" id="consejos">
-            <h2 class="section__title">Consejos Básicos</h2>
+        <!-- Consejos -->
+        <section class="section section--consejos" id="consejos" aria-labelledby="consejos-title">
+        <h2 class="section__title" id="consejos-title">Consejos Básicos</h2>
+        <ul class="section__list" aria-label="Lista de consejos básicos">
+            <li class="section__item">Usa contraseñas fuertes y únicas.</li>
+            <li class="section__item">No compartas información personal en redes sociales.</li>
+            <li class="section__item">Actualiza tus dispositivos y aplicaciones regularmente.</li>
+            <li class="section__item">Desconfía de correos electrónicos sospechosos.</li>
+            <li class="section__item">Utiliza autenticación en dos pasos.</li>
+        </ul>
+
+        <h2 class="section__title">Consejos de navegación segura</h2>
+
+        <article>
+            <h3 class="section__subtitle">Blindar los dispositivos</h3>
+            <p class="section__description">Aun si somos cuidadosos con quien hablamos o compartimos material en la web, podemos ser víctimas de robo de celulares, accesos no autorizados, etc. Por eso es necesario proteger los equipos y las cuentas.</p>
             <ul class="section__list">
-                <li class="section__item">Usa contraseñas fuertes y únicas.</li>
-                <li class="section__item">No compartas información personal en redes sociales.</li>
-                <li class="section__item">Actualiza tus dispositivos y aplicaciones regularmente.</li>
-                <li class="section__item">Desconfía de correos electrónicos sospechosos.</li>
-                <li class="section__item">Utiliza autenticación en dos pasos.</li>
+            <li class="section__item">Usar contraseñas seguras</li>
+            <li class="section__item">Mantener software actualizado</li>
+            <li class="section__item">Usar antivirus y actualizarlo periódicamente</li>
+            <li class="section__item">Bloquear los dispositivos con código, huella o patrón</li>
+            <li class="section__item">Configurar la privacidad de las redes sociales</li>
+            <li class="section__item">No conectarse a redes Wifi desconocidas o públicas</li>
             </ul>
+        </article>
+
+        <article>
+            <h3 class="section__subtitle">Contraseñas seguras</h3>
+            <ul class="section__list">
+            <li class="section__item">No incluir datos personales ni construcciones simples como “1234”</li>
+            <li class="section__item">Usar entre 8 y 10 caracteres como mínimo</li>
+            <li class="section__item">Combinar letras, números y signos de puntuación</li>
+            <li class="section__item">Utilizar contraseñas distintas para cada cuenta o dispositivo</li>
+            <li class="section__item">Cambiarlas periódicamente</li>
+            <li class="section__item">No almacenarlas en dispositivos si se anotan</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3 class="section__subtitle">Mantener privado lo privado</h3>
+            <ul class="section__list">
+            <li class="section__item">Aceptar solo conocidos en redes sociales</li>
+            <li class="section__item">Configurar la privacidad en las aplicaciones</li>
+            <li class="section__item">Pensar dos veces antes de enviar o publicar una imagen</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3 class="section__subtitle">Al recibir una solicitud de amistad</h3>
+            <ul class="section__list">
+            <li class="section__item">Verificar si se conoce al solicitante por la foto de perfil o referencias confiables</li>
+            <li class="section__item">Observar la cantidad de amigos y si hay amigos en común</li>
+            <li class="section__item">Revisar la fecha de creación de la cuenta</li>
+            <li class="section__item">Verificar que la persona aparezca en otras fotos publicadas</li>
+            </ul>
+            <p class="section__description">Estos datos no garantizan buenas intenciones, pero ayudan a filtrar solicitudes de mayor riesgo.</p>
+        </article>
+
+        <article>
+            <h3 class="section__subtitle">Frenar lo que incomoda o asusta</h3>
+            <p class="section__description">Es preferible frenar cualquier interacción que nos incomode o asuste. Bloqueá y/o reportá a quien te moleste. Confiá en tu intuición.</p>
+        </article>
+
+        <article>
+            <h3 class="section__subtitle">Navegar con precaución</h3>
+            <ul class="section__list">
+            <li class="section__item">No abrir correos ni enlaces de desconocidos</li>
+            <li class="section__item">Evitar mensajes de promociones, premios o servicios gratuitos</li>
+            <li class="section__item">No compartir contraseñas en sitios no confiables</li>
+            <li class="section__item">Descargar contenidos solo de fuentes oficiales y confiables</li>
+            </ul>
+        </article>
         </section>
 
-        <section class="section section--recursos" id="recursos">
-            <h2 class="section__title">Recursos Útiles</h2>
-            <ul class="section__list">
-                <li class="section__item"><a class="section__link" href="https://www.incibe.es/" target="_blank">INCIBE</a></li>
-                <li class="section__item"><a class="section__link" href="https://www.osi.es/" target="_blank">Oficina de Seguridad del Internauta</a></li>
-                <li class="section__item"><a class="section__link" href="https://www.ciberseguridad.gob.ar/" target="_blank">Ciberseguridad Argentina</a></li>
-            </ul>
+        <!-- Recursos -->
+        <section class="section section--recursos" id="recursos" aria-labelledby="recursos-title">
+        <h2 class="section__title" id="recursos-title">Recursos Útiles</h2>
+        <ul class="section__list">
+            <li class="section__item"><a class="section__link" href="https://www.incibe.es/" target="_blank" rel="noopener">INCIBE</a></li>
+            <li class="section__item"><a class="section__link" href="https://www.osi.es/" target="_blank" rel="noopener">Oficina de Seguridad del Internauta</a></li>
+            <li class="section__item"><a class="section__link" href="https://www.ciberseguridad.gob.ar/" target="_blank" rel="noopener">Ciberseguridad Argentina</a></li>
+        </ul>
         </section>
 
-        <section class="section section--contacto" id="contacto">
-            <h2 class="section__title">Contacto</h2>
-            <form class="form">
-                <label class="form__label" for="nombre">Nombre:</label>
-                <input class="form__input" type="text" id="nombre" name="nombre" required>
-                
-                <label class="form__label" for="email">Correo electrónico:</label>
-                <input class="form__input" type="email" id="email" name="email" required>
-                
-                <label class="form__label" for="mensaje">Mensaje:</label>
-                <textarea class="form__textarea" id="mensaje" name="mensaje" required></textarea>
-                
-                <button class="form__button" type="submit">Enviar</button>
-            </form>
+        <!-- Contacto -->
+        <section class="section section--contacto" id="contacto" aria-labelledby="contacto-title">
+        <h2 class="section__title" id="contacto-title">Contacto</h2>
+        <form class="form" aria-describedby="contacto-title">
+            <label class="form__label" for="nombre">Nombre:</label>
+            <input class="form__input" type="text" id="nombre" name="nombre" required aria-required="true">
+
+            <label class="form__label" for="email">Correo electrónico:</label>
+            <input class="form__input" type="email" id="email" name="email" required aria-required="true">
+
+            <label class="form__label" for="mensaje">Mensaje:</label>
+            <textarea class="form__textarea" id="mensaje" name="mensaje" required aria-required="true"></textarea>
+
+            <button class="form__button" type="submit">Enviar</button>
+        </form>
         </section>
     </main>
 
-    <footer class="footer">
-    <p class="footer__text">&copy; 2025 Concientización en Ciberseguridad. Todos los derechos reservados.</p>
+    <footer class="footer" role="contentinfo">
+        <p class="footer__text">&copy; 2025 Concientización en Ciberseguridad. Todos los derechos reservados.</p>
     </footer>
     <script src="scripts.js"></script>
-</body>
+    </body>
 </html>

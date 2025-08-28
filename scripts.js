@@ -1,3 +1,13 @@
+// Evitar copia de contenido
+document.addEventListener("copy", function(e) {
+  if (e.clipboardData) {
+    e.clipboardData.setData("text/plain", "Este contenido esta protegido y no puede ser copiado.");
+    e.preventDefault(); // Evita que se copie el contenido real
+  } else {
+    alert("Tu navegador no permite modificar el portapapeles.");
+  }
+});
+
 // Menú hamburguesa responsive
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('mainnav');
@@ -14,3 +24,6 @@ navLinks.forEach(link => {
         hamburger.setAttribute('aria-expanded', 'false');
     });
 });
+
+
+
