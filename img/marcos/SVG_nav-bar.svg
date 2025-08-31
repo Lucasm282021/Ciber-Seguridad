@@ -1,0 +1,20 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Filtro de resplandor -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00f0ff" />
+    </filter>
+  </defs>
+  <!-- Marco angular con efecto ne�n -->
+  <path
+    d="M 20 20 L 100 20 L 120 40 L 680 40 L 700 20 L 780 20 L 780 180 L 700 180 L 680 160 L 120 160 L 100 180 L 20 180 Z"
+    fill="none"
+    stroke="#00f0ff"
+    stroke-width="3"
+    stroke-linejoin="bevel"
+    stroke-linecap="round"
+    filter="url(#glow)"
+  />
+  <!-- Zona editable central -->
+  <rect x="120" y="40" width="560" height="120" fill="transparent" />
+</svg>

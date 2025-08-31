@@ -13,7 +13,7 @@
     <!-- Accesibilidad -->
     <meta name="HandheldFriendly" content="true">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="icon" href="img/Icono-ciberseguridad.png" type="image/png">
+    <link rel="icon" href="img/Logo-del-click-a-la-conciencia.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
         <section class="section section--intro" id="intro" aria-labelledby="title">
             <div class="section__branding">
                 <picture class="section__logo">
-                <img src="img/Logo-del-click-a-la-conciencia-mod.png" alt="Logo Del click a la conciencia" class="header__logo">
+                <img src="img/logo/Logo-del-click-a-la-conciencia-mod.png" alt="Logo Del click a la conciencia" class="header__logo">
                 </picture>
                 <h1 class="section__title" id="title">Del click a la conciencia</h1>
             </div>
@@ -46,76 +46,95 @@
 
         <!-- Consejos -->
         <section class="section section--consejos" id="consejos" aria-labelledby="consejos-title">
-        <h2 class="section__title" id="consejos-title">Consejos Básicos</h2>
-        <ul class="section__list" aria-label="Lista de consejos básicos">
-            <li class="section__item">Usa contraseñas fuertes y únicas.</li>
-            <li class="section__item">No compartas información personal en redes sociales.</li>
-            <li class="section__item">Actualiza tus dispositivos y aplicaciones regularmente.</li>
-            <li class="section__item">Desconfía de correos electrónicos sospechosos.</li>
-            <li class="section__item">Utiliza autenticación en dos pasos.</li>
-        </ul>
-
-        <h2 class="section__title">Consejos de navegación segura</h2>
-
-        <article>
-            <h3 class="section__subtitle">Blindar los dispositivos</h3>
-            <p class="section__description">Aun si somos cuidadosos con quien hablamos o compartimos material en la web, podemos ser víctimas de robo de celulares, accesos no autorizados, etc. Por eso es necesario proteger los equipos y las cuentas.</p>
-            <ul class="section__list">
-            <li class="section__item">Usar contraseñas seguras</li>
-            <li class="section__item">Mantener software actualizado</li>
-            <li class="section__item">Usar antivirus y actualizarlo periódicamente</li>
-            <li class="section__item">Bloquear los dispositivos con código, huella o patrón</li>
-            <li class="section__item">Configurar la privacidad de las redes sociales</li>
-            <li class="section__item">No conectarse a redes Wifi desconocidas o públicas</li>
+            <h2 class="section__title" id="consejos-title">Consejos Básicos</h2>
+            <ul class="section__list" aria-label="Lista de consejos básicos">
+                <li class="section__item">Usa contraseñas fuertes y únicas.</li>
+                <li class="section__item">No compartas información personal en redes sociales.</li>
+                <li class="section__item">Actualiza tus dispositivos y aplicaciones regularmente.</li>
+                <li class="section__item">Desconfía de correos electrónicos sospechosos.</li>
+                <li class="section__item">Utiliza autenticación en dos pasos.</li>
             </ul>
-        </article>
+            <h2 class="section__title">Consejos de navegación segura</h2>
+            <h3 class="section__subtitle" id="abrir-dialogo">Blindar los dispositivos</h3>
+            <dialog class="dialog" id="seguridad-dialog">
+                <article>
+                    <h3 class="section__subtitle">Blindar los dispositivos</h3>
+                    <p class="section__description">
+                    Aun si somos cuidadosos con quien hablamos o compartimos material en la web, podemos ser víctimas de robo de celulares, accesos no autorizados, etc. Por eso es necesario proteger los equipos y las cuentas.
+                    </p>
+                    <ul class="section__list">
+                        <li class="section__item">Usar contraseñas seguras</li>
+                        <li class="section__item">Mantener software actualizado</li>
+                        <li class="section__item">Usar antivirus y actualizarlo periódicamente</li>
+                        <li class="section__item">Bloquear los dispositivos con código, huella o patrón</li>
+                        <li class="section__item">Configurar la privacidad de las redes sociales</li>
+                        <li class="section__item">No conectarse a redes Wifi desconocidas o públicas</li>
+                    </ul>
+                    <form method="dialog">
+                        <button class="tech-menu__link">Cerrar</button>
+                    </form>
+                </article>
+            </dialog>
+            <h3 class="section__subtitle" id="abrir-contraseña">Contraseñas seguras</h3>
+            <dialog class="dialog" id="contraseñas-seguras">
+                <article>
+                    <h3 class="section__subtitle">Contraseñas seguras</h3>
+                    <p class="section__description"></p>
+                    <ul class="section__list">
+                        <li class="section__item">No incluir datos personales ni construcciones simples como “1234”</li>
+                        <li class="section__item">Usar entre 8 y 10 caracteres como mínimo</li>
+                        <li class="section__item">Combinar letras, números y signos de puntuación</li>
+                        <li class="section__item">Utilizar contraseñas distintas para cada cuenta o dispositivo</li>
+                        <li class="section__item">Cambiarlas periódicamente</li>
+                        <li class="section__item">No almacenarlas en dispositivos si se anotan</li>
+                    </ul>
+                    <form method="dialog">
+                        <button class="tech-menu__link">Cerrar</button>
+                    </form>
+                </article>
+            </dialog>
+            <h3 class="section__subtitle" id="abir-mantener_privado">Mantener privado lo privado</h3>
+            <dialog class="dialog" id="mantener-privado">
+                <article>
+                    <h3 class="section__subtitle">Mantener privado lo privado</h3>
+                    <p class="section__description"></p>
+                    <ul class="section__list">
+                        <li class="section__item">Aceptar solo conocidos en redes sociales</li>
+                        <li class="section__item">Configurar la privacidad en las aplicaciones</li>
+                        <li class="section__item">Pensar dos veces antes de enviar o publicar una imagen</li>
+                    </ul>
+                    <form method="dialog">
+                        <button class="tech-menu__link">Cerrar</button>
+                    </form>
+                </article>
+            </dialog>
 
-        <article>
-            <h3 class="section__subtitle">Contraseñas seguras</h3>
-            <ul class="section__list">
-            <li class="section__item">No incluir datos personales ni construcciones simples como “1234”</li>
-            <li class="section__item">Usar entre 8 y 10 caracteres como mínimo</li>
-            <li class="section__item">Combinar letras, números y signos de puntuación</li>
-            <li class="section__item">Utilizar contraseñas distintas para cada cuenta o dispositivo</li>
-            <li class="section__item">Cambiarlas periódicamente</li>
-            <li class="section__item">No almacenarlas en dispositivos si se anotan</li>
-            </ul>
-        </article>
 
-        <article>
-            <h3 class="section__subtitle">Mantener privado lo privado</h3>
-            <ul class="section__list">
-            <li class="section__item">Aceptar solo conocidos en redes sociales</li>
-            <li class="section__item">Configurar la privacidad en las aplicaciones</li>
-            <li class="section__item">Pensar dos veces antes de enviar o publicar una imagen</li>
-            </ul>
-        </article>
+                <article>
+                    <h3 class="section__subtitle">Al recibir una solicitud de amistad</h3>
+                    <ul class="section__list">
+                        <li class="section__item">Verificar si se conoce al solicitante por la foto de perfil o referencias confiables</li>
+                        <li class="section__item">Observar la cantidad de amigos y si hay amigos en común</li>
+                        <li class="section__item">Revisar la fecha de creación de la cuenta</li>
+                        <li class="section__item">Verificar que la persona aparezca en otras fotos publicadas</li>
+                    </ul>
+                    <p class="section__description">Estos datos no garantizan buenas intenciones, pero ayudan a filtrar solicitudes de mayor riesgo.</p>
+                </article>
 
-        <article>
-            <h3 class="section__subtitle">Al recibir una solicitud de amistad</h3>
-            <ul class="section__list">
-            <li class="section__item">Verificar si se conoce al solicitante por la foto de perfil o referencias confiables</li>
-            <li class="section__item">Observar la cantidad de amigos y si hay amigos en común</li>
-            <li class="section__item">Revisar la fecha de creación de la cuenta</li>
-            <li class="section__item">Verificar que la persona aparezca en otras fotos publicadas</li>
-            </ul>
-            <p class="section__description">Estos datos no garantizan buenas intenciones, pero ayudan a filtrar solicitudes de mayor riesgo.</p>
-        </article>
+                <article>
+                    <h3 class="section__subtitle">Frenar lo que incomoda o asusta</h3>
+                    <p class="section__description">Es preferible frenar cualquier interacción que nos incomode o asuste. Bloqueá y/o reportá a quien te moleste. Confiá en tu intuición.</p>
+                </article>
 
-        <article>
-            <h3 class="section__subtitle">Frenar lo que incomoda o asusta</h3>
-            <p class="section__description">Es preferible frenar cualquier interacción que nos incomode o asuste. Bloqueá y/o reportá a quien te moleste. Confiá en tu intuición.</p>
-        </article>
-
-        <article>
-            <h3 class="section__subtitle">Navegar con precaución</h3>
-            <ul class="section__list">
-            <li class="section__item">No abrir correos ni enlaces de desconocidos</li>
-            <li class="section__item">Evitar mensajes de promociones, premios o servicios gratuitos</li>
-            <li class="section__item">No compartir contraseñas en sitios no confiables</li>
-            <li class="section__item">Descargar contenidos solo de fuentes oficiales y confiables</li>
-            </ul>
-        </article>
+                <article>
+                    <h3 class="section__subtitle">Navegar con precaución</h3>
+                    <ul class="section__list">
+                        <li class="section__item">No abrir correos ni enlaces de desconocidos</li>
+                        <li class="section__item">Evitar mensajes de promociones, premios o servicios gratuitos</li>
+                        <li class="section__item">No compartir contraseñas en sitios no confiables</li>
+                        <li class="section__item">Descargar contenidos solo de fuentes oficiales y confiables</li>
+                    </ul>
+                </article>
         </section>
 
         <!-- Recursos -->
@@ -144,11 +163,45 @@
             <button class="form__button" type="submit">Enviar</button>
         </form>
         </section>
+        <section class="survey-dashboard">
+            <header class="dashboard-header">
+                <h2>Resultados de Encuesta</h1>
+                <div class="filters">
+                <label for="segment">Segmento:</label>
+                    <select id="segment">
+                        <option>Todos</option>
+                        <option>18-25</option>
+                        <option>26-40</option>
+                        <option>+40</option>
+                    </select>
+                </div>
+            </header>
+            <div class="dashboard-grid">
+                <div class="card metric">
+                <h2>Tasa de respuesta</h2>
+                <p>82%</p>
+                </div>
+                <div class="card metric">
+                <h2>Abandono</h2>
+                <p>6%</p>
+                </div>
+                <div class="card chart">
+                <h2>Preferencias</h2>
+                <canvas id="chart-preferencias"></canvas>
+                </div>
+                <div class="card chart">
+                <h2>Satisfacción</h2>
+                <canvas id="chart-satisfaccion"></canvas>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer" role="contentinfo">
         <p class="footer__text">&copy; 2025 Concientización en Ciberseguridad. Todos los derechos reservados.</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script> <!-- tu archivo JS -->
+    <script src="js/scripts.js"></script>
     </body>
 </html>
