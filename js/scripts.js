@@ -7,6 +7,7 @@ document.addEventListener("copy", function(e) {
     alert("Tu navegador no permite modificar el portapapeles.");
   }
 });
+
 // modal dialog
 document.getElementById('abrir-dialogo').addEventListener('click', () => {
   const dialogo = document.getElementById('seguridad-dialog');
@@ -22,20 +23,20 @@ document.getElementById('abir-mantener_privado').addEventListener('click', () =>
 });
 
 // Menú hamburguesa responsive
-const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('mainnav');
-const navLinks = document.querySelectorAll('.header__nav-link');
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.tech-menu');
 
-function toggleMenu() {
-    nav.classList.toggle('header__nav--open');
-    hamburger.setAttribute('aria-expanded', nav.classList.contains('header__nav--open'));
-}
-hamburger.addEventListener('click', toggleMenu);
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('header__nav--open');
-        hamburger.setAttribute('aria-expanded', 'false');
-    });
+toggle.addEventListener('click', () => {
+  // Alternar clase visual
+  menu.classList.toggle('open');
+  toggle.classList.toggle('open');
+
+  // Verificar estado actual después del toggle
+  const isOpen = menu.classList.contains('open');
+
+  // Actualizar atributos ARIA
+  toggle.setAttribute('aria-expanded', String(isOpen));
+  menu.setAttribute('aria-hidden', String(!isOpen));
 });
 
 

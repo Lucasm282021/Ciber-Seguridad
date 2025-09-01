@@ -18,15 +18,21 @@
 </head>
 <body>
     <header class="header" role="banner">
-        <nav class="tech-menu" aria-label="Menú tecnológico">
-            <ul class="tech-menu__list">
-                <li><a href="#intro" class="tech-menu__link">Inicio</a></li>
-                <li><a href="#consejos" class="tech-menu__link">Consejos</a></li>
-                <li><a href="#recursos" class="tech-menu__link">Recursos</a></li>
-                <li><a href="#contacto" class="tech-menu__link">Contacto</a></li>
-                <li><a href="#survey-dashboard" class="tech-menu__link">Encuesta</a></li>
-            </ul>
-        </nav>
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="tech-menu">
+        <span class="menu-icon"></span>
+    </button>
+
+    <!-- Menú principal -->
+    <nav class="tech-menu" id="tech-menu" aria-label="Menú tecnológico" aria-hidden="true">
+        <ul class="tech-menu__list">
+        <li><a href="#intro" class="tech-menu__link">Inicio</a></li>
+        <li><a href="#consejos" class="tech-menu__link">Consejos</a></li>
+        <li><a href="#recursos" class="tech-menu__link">Recursos</a></li>
+        <li><a href="#contacto" class="tech-menu__link">Contacto</a></li>
+        <li><a href="#survey-dashboard" class="tech-menu__link">Encuesta</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main class="main" role="main">
@@ -105,11 +111,10 @@
                         <li class="section__item">Pensar dos veces antes de enviar o publicar una imagen</li>
                     </ul>
                     <form method="dialog">
-                        <button class="tech-menu__link">Cerrar</button>
+                        <button class="tech-menu__link">X</button>
                     </form>
                 </article>
             </dialog>
-
 
                 <article>
                     <h3 class="section__subtitle">Al recibir una solicitud de amistad</h3>

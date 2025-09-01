@@ -68,6 +68,78 @@ body {
   opacity: 0.95;
 }
 
+/* Botón hamburguesa */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  display: none;
+  z-index: 101;
+}
+
+/* Ícono hamburguesa: tres líneas */
+.menu-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #00ffe7;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #00ffe7;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon::before {
+  top: -8px;
+}
+
+.menu-icon::after {
+  top: 8px;
+}
+
+/* Estado abierto: animación en X */
+.menu-toggle.open .menu-icon {
+  background: transparent;
+}
+
+.menu-toggle.open .menu-icon::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open .menu-icon::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menú principal */
+.tech-menu {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tech-menu__list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tech-menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
 /* Menú de navegación */
 .tech-menu {
   display: flex;
@@ -439,3 +511,34 @@ dialog {
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .tech-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(15, 32, 39, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .tech-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .tech-menu__list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
