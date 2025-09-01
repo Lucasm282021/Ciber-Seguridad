@@ -318,6 +318,7 @@ dialog {
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
+.section__subtitle:hover,
 .section__item:hover {
   background-color: #00e0ff;
   color: #0b1120;
