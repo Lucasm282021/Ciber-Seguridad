@@ -6,7 +6,7 @@ document.addEventListener("copy", function(e) {
   } else {
     alert("Tu navegador no permite modificar el portapapeles.");
   }
-});
+}); 
 
 // modal dialog
 document.getElementById('abrir-dialogo').addEventListener('click', () => {
