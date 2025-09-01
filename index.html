@@ -24,6 +24,7 @@
                 <li><a href="#consejos" class="tech-menu__link">Consejos</a></li>
                 <li><a href="#recursos" class="tech-menu__link">Recursos</a></li>
                 <li><a href="#contacto" class="tech-menu__link">Contacto</a></li>
+                <li><a href="#survey-dashboard" class="tech-menu__link">Encuesta</a></li>
             </ul>
         </nav>
     </header>
@@ -71,7 +72,7 @@
                         <li class="section__item">No conectarse a redes Wifi desconocidas o públicas</li>
                     </ul>
                     <form method="dialog">
-                        <button class="tech-menu__link">Cerrar</button>
+                        <button class="tech-menu__link">X</button>
                     </form>
                 </article>
             </dialog>
@@ -89,7 +90,7 @@
                         <li class="section__item">No almacenarlas en dispositivos si se anotan</li>
                     </ul>
                     <form method="dialog">
-                        <button class="tech-menu__link">Cerrar</button>
+                        <button class="tech-menu__link">X</button>
                     </form>
                 </article>
             </dialog>
@@ -163,7 +164,8 @@
             <button class="form__button" type="submit">Enviar</button>
         </form>
         </section>
-        <section class="survey-dashboard">
+        <!-- Dashboard de Encuesta -->
+        <section class="survey-dashboard" id="survey-dashboard" aria-labelledby="survey-title">
             <header class="dashboard-header">
                 <h2>Resultados de Encuesta</h1>
                 <div class="filters">
@@ -178,20 +180,20 @@
             </header>
             <div class="dashboard-grid">
                 <div class="card metric">
-                <h2>Tasa de respuesta</h2>
-                <p>82%</p>
+                    <h2>Tasa de respuesta</h2>
+                    <p>82%</p>
                 </div>
                 <div class="card metric">
-                <h2>Abandono</h2>
-                <p>6%</p>
+                    <h2>Abandono</h2>
+                    <p>6%</p>
                 </div>
                 <div class="card chart">
-                <h2>Preferencias</h2>
-                <canvas id="chart-preferencias"></canvas>
+                    <h2>Preferencias</h2>
+                    <canvas id="chart-preferencias"></canvas>
                 </div>
                 <div class="card chart">
-                <h2>Satisfacción</h2>
-                <canvas id="chart-satisfaccion"></canvas>
+                    <h2>Satisfacción</h2>
+                    <canvas id="chart-satisfaccion"></canvas>
                 </div>
             </div>
         </section>
