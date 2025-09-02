@@ -46,7 +46,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  background-image: url('img/fondos/fondo_1.jpg');
+  background-image: url('img/fondos/fondo_1.webp');
   background-size: cover;
   background-attachment: fixed; 
   color: #e2e8f0;
@@ -416,6 +416,7 @@ dialog {
 
 /* Dashboard de Encuesta */
 .survey-dashboard {
+  display: none;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #fff;
@@ -423,7 +424,6 @@ dialog {
   border-radius: 12px;
   max-width: 1200px;
   margin-inline: auto;
-  display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
