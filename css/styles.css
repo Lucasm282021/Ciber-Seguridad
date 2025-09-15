@@ -350,70 +350,84 @@ dialog {
 
 /* Formulario */
 .form {
-  background-color: #1e293b;
-  padding: 2rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(11, 17, 32, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: clamp(1rem, 5vw, 2rem);
+  border-radius: 12px;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 
+/* Etiquetas y encabezado */
 .form__label,
 .form__encabezado {
   display: block;
-  margin: 1rem 0 0.5rem;
   color: #00e0ff;
   font-weight: 600;
-  font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 
+/* Campos de entrada y textarea */
 .form__input,
 .form__textarea {
   width: 100%;
-  padding: 0.8rem;
-  border: 1.5px solid #1e293b;
-  border-radius: 8px;
+  max-width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
   font-size: 1rem;
   background-color: #fff;
   color: #1a202c;
-  transition: border 0.2s ease;
+  transition: border-color 0.2s ease;
   box-sizing: border-box;
+  border-width: 2px;
 }
 
+/* Textarea específico */
 .form__textarea {
-  min-height: 120px;
-  max-height: 300px;
+  min-height: 100px;
+  max-height: 250px;
   resize: none;
   overflow-y: auto;
 }
 
+/* Enfoque visual */
 .form__input:focus,
 .form__textarea:focus {
-  border: 2px solid #00e0ff;
+  border-color: #00e0ff;
   outline: 2px solid #00e0ff;
   outline-offset: 2px;
 }
 
+/* Validación visual */
 .form__input[aria-invalid="true"],
 .form__textarea[aria-invalid="true"] {
-  border: 2px solid #ff3b3b;
+  border-color: #ff3b3b;
   background-color: #fff0f3;
 }
 
+/* Botón */
 .form__button {
+  margin-top: 1.5rem;
+  align-self: flex-start;
   background-color: #00e0ff;
   color: #0b1120;
   border: none;
-  padding: 0.8rem 1.7rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 6px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 224, 255, 0.4);
   transition: all 0.2s ease;
-  margin-top: 1.5rem;
 }
 
+/* Botón hover/focus */
 .form__button:hover,
 .form__button:focus {
   background-color: #0b1120;
@@ -422,6 +436,46 @@ dialog {
   outline-offset: 2px;
   box-shadow: 0 0 18px #00e0ff;
 }
+
+/* Estilo para la barra de edad */
+.form__input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #00e0ff, #00ff88);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Thumb de la barra */
+.form__input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #00e0ff;
+  border: 2px solid #0b1120;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 224, 255, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.form__input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background-color: #00e0ff;
+  border: 2px solid #0b1120;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 224, 255, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+/* Contenedor para grupos de campos */
+.form__group {
+  margin-bottom: 1rem;
+}
+
 
 /* Dashboard de Encuesta */
 .survey-dashboard {
