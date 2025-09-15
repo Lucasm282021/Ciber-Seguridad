@@ -216,7 +216,7 @@ body {
 
 /* Main */
 .main {
-  max-width: 950px;
+  max-width: min(90vw, 950px);
   margin: 0 auto;
   padding: var(--padding-lg);
   background-color: rgba(11, 17, 32, 0.6); /* Basado en --color-bg-dark con opacidad */
@@ -244,6 +244,15 @@ body {
   position: relative;
   isolation: isolate;
   margin-top: auto;
+}
+
+.section__subtitle--static {
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-weight: 600;
+  color: #e2e8f0;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 4px rgba(11, 17, 32, 0.25);
 }
 
 .section__branding {
@@ -318,8 +327,7 @@ dialog {
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.section__subtitle:hover,
-.section__item:hover {
+.section__subtitle:hover{
   background-color: #00e0ff;
   color: #0b1120;
   font-weight: bold;
@@ -350,7 +358,8 @@ dialog {
   margin: 0 auto;
 }
 
-.form__label {
+.form__label,
+.form__encabezado {
   display: block;
   margin: 1rem 0 0.5rem;
   color: #00e0ff;
@@ -374,7 +383,7 @@ dialog {
 .form__textarea {
   min-height: 120px;
   max-height: 300px;
-  resize: vertical;
+  resize: none;
   overflow-y: auto;
 }
 
@@ -532,6 +541,7 @@ dialog {
   margin: 0;
 }
 
+/* Footer */
 /* Enlaces a redes sociales */
 .social-links {
   display: flex;
@@ -571,7 +581,6 @@ dialog {
   display: none; /* opcional: mostrar solo en accesibilidad o expandido */
 }
 
-/* Footer */
 .footer {
   background-color: #0b1120;
   color: #e2e8f0;

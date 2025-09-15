@@ -44,72 +44,92 @@
 
 <body>
     <header class="header" role="banner">
-    <!-- Botón hamburguesa -->
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="tech-menu">
-        <span class="menu-icon"></span>
-    </button>
-
-    <!-- Menú principal -->
-    <nav class="tech-menu" id="tech-menu" aria-label="Menú tecnológico" aria-hidden="true">
-        <ul class="tech-menu__list">
-        <li><a href="#intro" class="tech-menu__link">Inicio</a></li>
-        <li><a href="#consejos" class="tech-menu__link">Consejos</a></li>
-        <li><a href="#recursos" class="tech-menu__link">Recursos</a></li>
-        <li><a href="#contacto" class="tech-menu__link">Contacto</a></li>
-        <li><a href="#survey-dashboard" class="tech-menu__link">Encuesta</a></li>
-        </ul>
-    </nav>
-    </header>
-
-    <main class="main" role="main">
-        <!-- Introducción -->
-        <section class="section section--intro" id="intro" aria-labelledby="title">
-            <div class="section__branding">
-                <picture class="section__logo">
-                    <img src="img/logo/Logo-del-click-a-la-conciencia-mod.png" alt="Logo Del click a la conciencia" class="header__logo">
-                </picture>
-                <h1 class="section__title" id="title">Del Click a la Consciencia</h1>
-                <p class="section__subtitle">Proyecto académico del ISFDyT N°26 – Dolores</p>
-            </div>
-
-            <div class="section__content">
-                <section class="section__block section__intro">
-                    <p>Somos un proyecto académico de la carrera de Desarrollo de Software, creado para acompañar a la comunidad en el uso responsable de la tecnología.</p>
-                </section>
-
-                <section class="section__block section__contexto">
-                    <h2 class="section__title">¿Por qué es importante?</h2>
-                    <p>En un mundo cada vez más conectado, la ciberseguridad se vuelve clave: aprender a reconocer riesgos y proteger nuestra información es fundamental para cuidarnos en el mundo digital.</p>
-                </section>
-
-                <section class="section__block section__objetivo">
-                    <h2 class="section__title">Objetivo</h2>
-                    <p>Queremos que cada persona pueda navegar con mayor seguridad y confianza, aprendiendo a identificar los engaños más comunes en este entorno.</p>
-                </section>
-
-                <section class="section__block section__invitacion">
-                    <h2 class="section__title">Sumate</h2>
-                    <p>Te invitamos a ser parte: compartí tus ideas, aprendamos juntos y hagamos del ciberespacio un lugar más seguro para todos.</p>
-                </section>
-            </div>
-        </section>
-        <!-- Consejos -->
-        <section class="section section--consejos" id="consejos" aria-labelledby="consejos-title">
-            <h2 class="section__title" id="consejos-title">Consejos Básicos</h2>
-            <ul class="section__list" aria-label="Lista de consejos básicos">
-                <li class="section__item">Usa contraseñas fuertes y únicas.</li>
-                <li class="section__item">No compartas información personal en redes sociales.</li>
-                <li class="section__item">Actualiza tus dispositivos y aplicaciones regularmente.</li>
-                <li class="section__item">Desconfía de correos electrónicos sospechosos.</li>
-                <li class="section__item">Utiliza autenticación en dos pasos.</li>
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="tech-menu">
+            <span class="menu-icon"></span>
+        </button>
+        <!-- Menú principal -->
+        <nav class="tech-menu" id="tech-menu" aria-label="Menú tecnológico" aria-hidden="true">
+            <ul class="tech-menu__list">
+            <li><a href="#intro" class="tech-menu__link">Inicio</a></li>
+            <li><a href="#consejos" class="tech-menu__link">Consejos</a></li>
+            <li><a href="#recursos" class="tech-menu__link">Recursos</a></li>
+            <li><a href="#contacto" class="tech-menu__link">Contacto</a></li>
+            <li><a href="#survey-dashboard" class="tech-menu__link">Encuesta</a></li>
             </ul>
-            <h2 class="section__title">Consejos de navegación segura</h2>
-            <h3 class="section__subtitle" id="abrir-dialogo">Blindar los dispositivos</h3>
-            <dialog class="dialog" id="seguridad-dialog">
-                <article>
-                    <h3 class="section__subtitle">Blindar los dispositivos</h3>
+        </nav>
+    </header>
+        <main class="main" role="main">
+            <!-- Introducción -->
+            <section class="section section--intro" id="intro" aria-labelledby="title">
+                <!-- Branding -->
+                <div class="section__branding">
+                    <figure class="section__logo">
+                    <img src="img/logo/Logo-del-click-a-la-conciencia-mod.png" alt="Logo Del click a la conciencia" class="header__logo">
+                    </figure>
+                    <div>
+                    <h1 class="section__title" id="title">Del Click a la Consciencia</h1>
+                    <h2 class="section__subtitle--static" id="subtitle">Proyecto académico del ISFDyT N°26 – Dolores</h2>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="section__content">
+                <!-- Introducción -->
+                    <section class="section__block section__intro">
+                    <h2 class="section__title">¿Quiénes somos?</h2>
                     <p class="section__description">
-                    Aun si somos cuidadosos con quien hablamos o compartimos material en la web, podemos ser víctimas de robo de celulares, accesos no autorizados, etc. Por eso es necesario proteger los equipos y las cuentas.
+                        Somos un proyecto académico de la carrera de Desarrollo de Software, creado para acompañar a la comunidad en el uso responsable de la tecnología.
+                    </p>
+                    </section>
+                <!-- Importancia -->
+                    <section class="section__block section__contexto">
+                    <h2 class="section__title">¿Por qué es importante?</h2>
+                    <ul class="section__list">
+                        <li class="section__item">Vivimos en un mundo cada vez más conectado.</li>
+                        <li class="section__item">La ciberseguridad es clave para proteger nuestra información.</li>
+                        <li class="section__item">Reconocer riesgos digitales es fundamental para cuidarnos.</li>
+                    </ul>
+                    </section>
+                <!-- Objetivo -->
+                    <section class="section__block section__objetivo">
+                    <h2 class="section__title">Nuestro objetivo</h2>
+                    <p class="section__description">
+                        Queremos que cada persona pueda navegar con mayor seguridad y confianza, aprendiendo a identificar los engaños más comunes en este entorno.
+                    </p>
+                    </section>
+                <!-- Invitación -->
+                    <section class="section__block section__invitacion">
+                    <h2 class="section__title">Sumate</h2>
+                    <p class="section__description">
+                        Te invitamos a ser parte: compartí tus ideas, aprendamos juntos y hagamos del ciberespacio un lugar más seguro para todos.
+                    </p>
+                    <p style="text-align:center;">
+                        <a href="#formulario" class="section__link">¡Quiero participar!</a>
+                    </p>
+                    </section>
+                </div>
+            </section>
+            <!-- Consejos -->
+            <section class="section section--consejos" id="consejos" aria-labelledby="consejos-title">
+                <h2 class="section__title" id="consejos-title">Consejos de seguridad digital</h2>
+                <section class="faq-section" aria-label="Preguntas frecuentes sobre buenas prácticas digitales">
+                    
+                    <!-- Consejos básicos -->
+                    <details class="faq-item">
+                    <summary class="section__subtitle">Consejos básicos</summary>
+                    <ul class="section__list">
+                        <li class="section__item">Usa contraseñas fuertes y únicas.</li>
+                        <li class="section__item">No compartas información personal en redes sociales.</li>
+                        <li class="section__item">Actualiza tus dispositivos y aplicaciones regularmente.</li>
+                        <li class="section__item">Desconfía de correos electrónicos sospechosos.</li>
+                        <li class="section__item">Utiliza autenticación en dos pasos.</li>
+                    </ul>
+                    </details>
+                    <!-- Blindar los dispositivos -->
+                    <details class="faq-item">
+                    <summary class="section__subtitle">Blindar los dispositivos</summary>
+                    <p class="section__description">
+                        Aun si somos cuidadosos con quien hablamos o compartimos material en la web, podemos ser víctimas de robo de celulares, accesos no autorizados, etc. Por eso es necesario proteger los equipos y las cuentas.
                     </p>
                     <ul class="section__list">
                         <li class="section__item">Usar contraseñas seguras</li>
@@ -119,16 +139,10 @@
                         <li class="section__item">Configurar la privacidad de las redes sociales</li>
                         <li class="section__item">No conectarse a redes Wifi desconocidas o públicas</li>
                     </ul>
-                    <form method="dialog">
-                        <button class="tech-menu__link">X</button>
-                    </form>
-                </article>
-            </dialog>
-            <h3 class="section__subtitle" id="abrir-contraseña">Contraseñas seguras</h3>
-            <dialog class="dialog" id="contraseñas-seguras">
-                <article>
-                    <h3 class="section__subtitle">Contraseñas seguras</h3>
-                    <p class="section__description"></p>
+                    </details>
+                    <!-- Contraseñas seguras -->
+                    <details class="faq-item">
+                    <summary class="section__subtitle">Contraseñas seguras</summary>
                     <ul class="section__list">
                         <li class="section__item">No incluir datos personales ni construcciones simples como “1234”</li>
                         <li class="section__item">Usar entre 8 y 10 caracteres como mínimo</li>
@@ -137,121 +151,111 @@
                         <li class="section__item">Cambiarlas periódicamente</li>
                         <li class="section__item">No almacenarlas en dispositivos si se anotan</li>
                     </ul>
-                    <form method="dialog">
-                        <button class="tech-menu__link">X</button>
-                    </form>
-                </article>
-            </dialog>
-            <h3 class="section__subtitle" id="abir-mantener_privado">Mantener privado lo privado</h3>
-            <dialog class="dialog" id="mantener-privado">
-                <article>
-                    <h3 class="section__subtitle">Mantener privado lo privado</h3>
-                    <p class="section__description"></p>
+                    </details>
+                    <!-- Mantener privado lo privado -->
+                    <details class="faq-item">
+                    <summary class="section__subtitle">Mantener privado lo privado</summary>
                     <ul class="section__list">
                         <li class="section__item">Aceptar solo conocidos en redes sociales</li>
                         <li class="section__item">Configurar la privacidad en las aplicaciones</li>
                         <li class="section__item">Pensar dos veces antes de enviar o publicar una imagen</li>
                     </ul>
-                    <form method="dialog">
-                        <button class="tech-menu__link">X</button>
-                    </form>
-                </article>
-            </dialog>
-            
-            <section class="faq-section" aria-label="Preguntas frecuentes sobre HTML">
-                <details class="faq-item">
-                    <summary>Al recibir una solicitud de amistad</summary>
+                    </details>
+                    <!-- Solicitudes de amistad -->
+                    <details class="faq-item">
+                    <summary class="section__subtitle">Al recibir una solicitud de amistad</summary>
                     <ul class="section__list">
                         <li class="section__item">Verificar si se conoce al solicitante por la foto de perfil o referencias confiables</li>
                         <li class="section__item">Observar la cantidad de amigos y si hay amigos en común</li>
                         <li class="section__item">Revisar la fecha de creación de la cuenta</li>
                         <li class="section__item">Verificar que la persona aparezca en otras fotos publicadas</li>
                     </ul>
-                    <p class="section__description">Estos datos no garantizan buenas intenciones, pero ayudan a filtrar solicitudes de mayor riesgo.</p>
-                    <article>
+                    <p class="section__description">
+                        Estos datos no garantizan buenas intenciones, pero ayudan a filtrar solicitudes de mayor riesgo.
+                    </p>
+                    <div>
                         <h3 class="section__subtitle">Frenar lo que incomoda o asusta</h3>
-                        <p class="section__description">Es preferible frenar cualquier interacción que nos incomode o asuste. Bloqueá y/o reportá a quien te moleste. Confiá en tu intuición.</p>
-                    </article>
-                </details>
-                <details class="faq-item">
-                    <summary>Navegar con precaución</summary>
+                        <p class="section__description">
+                        Es preferible frenar cualquier interacción que nos incomode o asuste. Bloqueá y/o reportá a quien te moleste. Confiá en tu intuición.
+                        </p>
+                    </div>
+                    </details>
+                    <!-- Navegar con precaución -->
+                    <details class="faq-item">
+                    <summary class="section__subtitle">Navegar con precaución</summary>
                     <ul class="section__list">
                         <li class="section__item">No abrir correos ni enlaces de desconocidos</li>
                         <li class="section__item">Evitar mensajes de promociones, premios o servicios gratuitos</li>
                         <li class="section__item">No compartir contraseñas en sitios no confiables</li>
                         <li class="section__item">Descargar contenidos solo de fuentes oficiales y confiables</li>
                     </ul>
-                </details>
-                    <!-- Agregá más preguntas según tu contenido -->
-            </section> 
-        </section>
+                    </details>
+                </section>
+            </section>
+            <!-- Recursos -->
+            <section class="section section--recursos" id="recursos" aria-labelledby="recursos-title">
+                <h2 class="section__title" id="recursos-title">Recursos Útiles</h2>
+                <ul class="section__list">
+                    <li class="section__item"><a class="section__link" href="https://www.incibe.es/" target="_blank" rel="noopener">INCIBE</a></li>
+                    <li class="section__item"><a class="section__link" href="https://www.osi.es/" target="_blank" rel="noopener">Oficina de Seguridad del Internauta</a></li>
+                    <li class="section__item"><a class="section__link" href="https://www.ciberseguridad.gob.ar/" target="_blank" rel="noopener">Ciberseguridad Argentina</a></li>
+                </ul>
+            </section>
+            <!-- Contacto -->
+            <section class="section section--contacto" id="contacto" aria-labelledby="contacto-title">
+                <h2 class="section__title" id="contacto-title">Contacto</h2>
+                <form class="form" aria-describedby="contacto-title">
+                    <h3 class="section__subtitle">Contanos algo que te haya pasado</h3>
 
-        <!-- Recursos -->
-        <section class="section section--recursos" id="recursos" aria-labelledby="recursos-title">
-        <h2 class="section__title" id="recursos-title">Recursos Útiles</h2>
-        <ul class="section__list">
-            <li class="section__item"><a class="section__link" href="https://www.incibe.es/" target="_blank" rel="noopener">INCIBE</a></li>
-            <li class="section__item"><a class="section__link" href="https://www.osi.es/" target="_blank" rel="noopener">Oficina de Seguridad del Internauta</a></li>
-            <li class="section__item"><a class="section__link" href="https://www.ciberseguridad.gob.ar/" target="_blank" rel="noopener">Ciberseguridad Argentina</a></li>
-        </ul>
-        </section>
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input class="form__input" type="text" id="nombre" name="nombre" required aria-required="true">
 
-        <!-- Contacto -->
-        <section class="section section--contacto" id="contacto" aria-labelledby="contacto-title">
-        <h2 class="section__title" id="contacto-title">Contacto</h2>
-        
-        <form class="form" aria-describedby="contacto-title">
-            <p>Contranos algo que te alla pasados:</p>
-            <label class="form__label" for="nombre">Nombre:</label>
-            <input class="form__input" type="text" id="nombre" name="nombre" required aria-required="true">
+                    <label class="form__label" for="email">Correo electrónico</label>
+                    <input class="form__input" type="email" id="email" name="email" required aria-required="true">
 
-            <label class="form__label" for="email">Correo electrónico:</label>
-            <input class="form__input" type="email" id="email" name="email" required aria-required="true">
+                    <label class="form__label" for="edad">Edad: <span id="edad-valor">25</span> años</label>
+                    <input class="form__input" type="range" id="edad" name="edad" min="10" max="100" value="25" oninput="document.getElementById('edad-valor').textContent = this.value">
 
-            <label class="form__label" for="email">Tu edad:</label>
-            <input class="form__input" type="range" email" name="email" required aria-required="true">
+                    <label class="form__label" for="mensaje">Mensaje</label>
+                    <textarea class="form__textarea" id="mensaje" name="mensaje" required aria-required="true"></textarea>
 
-            <label class="form__label" for="mensaje">Mensaje:</label>
-            <textarea class="form__textarea" id="mensaje" name="mensaje" required aria-required="true"></textarea>
-
-            <button class="form__button" type="submit">Enviar</button>
-        </form>
-        </section>
-        <!-- Dashboard de Encuesta -->
-        <section class="survey-dashboard" id="survey-dashboard" aria-labelledby="survey-title">
-            <header class="dashboard-header">
-                <h2>Resultados de Encuesta</h1>
-                <div class="filters">
-                <label for="segment">Segmento:</label>
-                    <select id="segment">
-                        <option>Todos</option>
-                        <option>18-25</option>
-                        <option>26-40</option>
-                        <option>+40</option>
-                    </select>
+                    <button class="form__button" type="submit">Enviar</button>
+                </form>
+            </section>
+            <!-- Dashboard de Encuesta -->
+            <section class="survey-dashboard" id="survey-dashboard" aria-labelledby="survey-title">
+                <header class="dashboard-header">
+                    <h2>Resultados de Encuesta</h1>
+                    <div class="filters">
+                    <label for="segment">Segmento:</label>
+                        <select id="segment">
+                            <option>Todos</option>
+                            <option>18-25</option>
+                            <option>26-40</option>
+                            <option>+40</option>
+                        </select>
+                    </div>
+                </header>
+                <div class="dashboard-grid">
+                    <div class="card metric">
+                        <h2>Tasa de respuesta</h2>
+                        <p>82%</p>
+                    </div>
+                    <div class="card metric">
+                        <h2>Abandono</h2>
+                        <p>6%</p>
+                    </div>
+                    <div class="card chart">
+                        <h2>Preferencias</h2>
+                        <canvas id="chart-preferencias"></canvas>
+                    </div>
+                    <div class="card chart">
+                        <h2>Satisfacción</h2>
+                        <canvas id="chart-satisfaccion"></canvas>
+                    </div>
                 </div>
-            </header>
-            <div class="dashboard-grid">
-                <div class="card metric">
-                    <h2>Tasa de respuesta</h2>
-                    <p>82%</p>
-                </div>
-                <div class="card metric">
-                    <h2>Abandono</h2>
-                    <p>6%</p>
-                </div>
-                <div class="card chart">
-                    <h2>Preferencias</h2>
-                    <canvas id="chart-preferencias"></canvas>
-                </div>
-                <div class="card chart">
-                    <h2>Satisfacción</h2>
-                    <canvas id="chart-satisfaccion"></canvas>
-                </div>
-            </div>
-        </section>
-    </main>
-
+            </section>
+        </main>
     <footer class="footer" role="contentinfo">
         <!-- Redes Sociales -->
         <section class="social-links" aria-label="Redes sociales">
@@ -269,7 +273,6 @@
                         <span class="social-label">Instagram</span>
                     </a>
                 </li>
-
                 <!-- Facebook -->
                 <li>
                     <a href="https://www.facebook.com/share/1EfKVQ3a9u/?mibextid=wwXIfr" 
