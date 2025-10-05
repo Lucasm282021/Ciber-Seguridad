@@ -201,11 +201,45 @@
                     <li class="section__item"><a class="section__link" href="https://www.ciberseguridad.gob.ar/" target="_blank" rel="noopener">Ciberseguridad Argentina</a></li>
                 </ul>
             </section>
-            <!-- Contacto -->
+            <!-- Galería de imágenes -->
+            <section id="galeria" aria-labelledby="galeria-titulo">
+                <h2 class="section__title" id="galeria-titulo">Galería de eventos</h2>
+                <p class="section__description">Explorá las imágenes de nuestras jornadas y actividades institucionales.</p>
+                <details class="galeria__evento">
+                <summary id="evento-jornada" aria-label="Ver galería Tercera Jornada Estudiantil">
+                    <h3>Tercera Jornada Estudiantil</h3>
+                </summary>
+                <iframe src="https://drive.google.com/embeddedfolderview?id=1UwH6uK5ne9mq58coaHav01zcWyA2XU_5#grid"
+                        width="100%" height="500" frameborder="0"
+                        title="Galería Tercera Jornada Estudiantil"
+                        loading="lazy"></iframe>
+                </details>
+
+                <details class="galeria__evento">
+                <summary id="evento-nerdiarla" aria-label="Ver galería Nerdiarla">
+                    <h3>Nerdiarla</h3>
+                </summary>
+                <iframe src="https://drive.google.com/embeddedfolderview?id=1GWlDXx0e7B0mEBY_wMk9pL4PzDV5HIoS#grid"
+                        width="100%" height="500" frameborder="0"
+                        title="Galería Nerdiarla"
+                        loading="lazy"></iframe>
+                </details>
+
+                <details class="galeria__evento">
+                <summary id="evento-rural" aria-label="Ver galería La Rural">
+                    <h3>La Rural</h3>
+                </summary>
+                <iframe src="https://drive.google.com/embeddedfolderview?id=1EjzHo8_43JLll_TIl_pCqcVQeVVP7P5-#grid"
+                        width="100%" height="500" frameborder="0"
+                        title="Galería La Rural"
+                        loading="lazy"></iframe>
+                </details>
+            </section>
+<!-- Contacto -->
             <section class="section section--contacto" id="contacto" aria-labelledby="contacto-title">
                 <h2 class="section__title" id="contacto-title">Contacto</h2>
                 <form class="form" aria-describedby="contacto-title">
-                    <h3 class="section__subtitle">Contanos algo que te haya pasado</h3>
+                    <h3 class="section__subtitle--static">Contanos algo que te haya pasado</h3>
 
                     <label class="form__label" for="nombre">Nombre</label>
                     <input class="form__input" type="text" id="nombre" name="nombre" required aria-required="true">

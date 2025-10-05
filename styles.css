@@ -247,7 +247,8 @@ body {
   margin-top: auto;
 }
 
-.section__subtitle--static {
+.section__subtitle--static,
+.galeria h2 {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
   font-weight: 600;
   color: #e2e8f0;
@@ -333,7 +334,7 @@ dialog {
 }
 
 .faq-item[open] {
-  border-left-color: #ff4081;
+  border-left-color: 	#00FF87;
 }
 
 .faq-item summary {
@@ -344,7 +345,7 @@ dialog {
 }
 
 .faq-item[open] summary {
-  color: #ff4081;
+  color: 	#00FF87;
 }
 
 .faq-item p {
@@ -386,6 +387,81 @@ dialog {
 .section__link:focus {
   color: #00ff88;
   outline: none;
+}
+
+/* Contenedor general */
+#galeria {
+  color: var(--color-text-light);
+  padding: 2rem;
+  
+}
+
+/* Título y descripción */
+.section__title {
+  font-size: 2rem;
+  color: var(--color-accent-primary);
+  margin-bottom: 0.5rem;
+}
+
+.galeria__descripcion {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+}
+
+/* Bloques de eventos */
+.galeria__evento {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-accent-primary);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.galeria__evento[open] {
+  box-shadow: 0 0 12px var(--color-shadow);
+}
+
+/* Summary interactivo */
+.galeria__evento summary {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: var(--color-bg-light);
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid var(--color-accent-primary);
+}
+
+.galeria__evento summary:hover {
+  background-color: var(--color-bg-dark);
+}
+
+/* Título dentro del summary */
+.galeria__evento summary h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--color-accent-secondary);
+}
+
+/* Iframe embebido */
+.galeria__evento iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  display: block;
+
+}
+
+/* Animación suave al desplegar */
+.galeria__evento[open] iframe {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Formulario */
