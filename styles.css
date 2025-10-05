@@ -313,6 +313,45 @@ dialog {
 }
 
 /* Listas */
+/* details/summary para FAQ */
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #00ffe7;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: border-left-color 0.3s ease;
+}
+
+.faq-item[open] {
+  border-left-color: #ff4081;
+}
+
+.faq-item summary {
+  font-weight: bold;
+  color: #00ffe7;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item[open] summary {
+  color: #ff4081;
+}
+
+.faq-item p {
+  color: #fff;
+  margin: 0;
+}
+
 .section__list {
   padding-left: 1.5rem;
   list-style: none;
@@ -351,7 +390,7 @@ dialog {
 
 /* Formulario */
 .form {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
   font-family: 'Segoe UI', sans-serif;
@@ -478,123 +517,6 @@ dialog {
 }
 
 
-/* Dashboard de Encuesta */
-.survey-dashboard {
-  display: none;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  padding: clamp(1rem, 5vw, 2rem);
-  border-radius: 12px;
-  max-width: 1200px;
-  margin-inline: auto;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.dashboard-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.dashboard-header h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.filters select {
-  background-color: #1c2b36;
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  min-width: 160px;
-}
-
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(1rem, 3vw, 1.5rem);
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-left: 4px solid #00ffe7;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 0 12px rgba(0,255,255,0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.card.metric {
-  border-left-color: #00ffe7;
-}
-
-.card.chart {
-  border-left-color: #ff4081;
-}
-
-.metric p {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  font-weight: bold;
-  color: #00ffe7;
-  margin: 0;
-}
-
-.chart canvas {
-  width: 100%;
-  aspect-ratio: 2 / 1;
-  display: block;
-}
-
-.faq-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
-  max-width: 800px;
-  margin-inline: auto;
-}
-
-.faq-item {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: 4px solid #00ffe7;
-  border-radius: 10px;
-  padding: 1rem;
-  transition: border-left-color 0.3s ease;
-}
-
-.faq-item[open] {
-  border-left-color: #ff4081;
-}
-
-.faq-item summary {
-  font-weight: bold;
-  color: #00ffe7;
-  cursor: pointer;
-  margin-bottom: 0.5rem;
-}
-
-.faq-item[open] summary {
-  color: #ff4081;
-}
-
-.faq-item p {
-  color: #fff;
-  margin: 0;
-}
 
 /* Footer */
 /* Enlaces a redes sociales */

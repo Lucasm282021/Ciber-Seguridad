@@ -8,20 +8,6 @@ document.addEventListener("copy", function(e) {
   }
 }); 
 
-// modal dialog
-document.getElementById('abrir-dialogo').addEventListener('click', () => {
-  const dialogo = document.getElementById('seguridad-dialog');
-  if (dialogo) dialogo.showModal();
-});
-document.getElementById('abrir-contraseña').addEventListener('click', () => {
-  const dialogo = document.getElementById('contraseñas-seguras');
-  if (dialogo) dialogo.showModal();
-});
-document.getElementById('abir-mantener_privado').addEventListener('click', () => {
-  const dialogo = document.getElementById('mantener-privado');
-  if (dialogo) dialogo.showModal();
-});
-
 // Menú hamburguesa responsive
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.tech-menu');
