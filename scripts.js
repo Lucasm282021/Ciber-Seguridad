@@ -12,20 +12,28 @@ document.addEventListener("copy", function(e) {
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.tech-menu');
 
+// Alternar visibilidad del menú
 toggle.addEventListener('click', () => {
-  // Alternar clase visual
   menu.classList.toggle('open');
   toggle.classList.toggle('open');
 
-  // Verificar estado actual después del toggle
   const isOpen = menu.classList.contains('open');
-
-  // Actualizar atributos ARIA
   toggle.setAttribute('aria-expanded', String(isOpen));
   menu.setAttribute('aria-hidden', String(!isOpen));
 });
 
+// Cerrar menú al hacer clic en cualquier ítem
+const menuItems = menu.querySelectorAll('a'); // o 'li a' si están dentro de <li>
 
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+
+    toggle.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-hidden', 'true');
+  });
+});
 
 
 
